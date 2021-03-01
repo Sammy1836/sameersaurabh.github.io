@@ -41,6 +41,7 @@ nav ul li a{
     color: white;
     font-size: 18px;
     text-transform: uppercase;
+    text-decoration:none;
    
 }
 
@@ -126,6 +127,7 @@ p {
 .new {
      text-align:left;
     font-size: 18px;
+    text-decoration: none;
 }
 
 .content{
