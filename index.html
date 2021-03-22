@@ -1,9 +1,774 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title> Index </title>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styling.css">
 </head>
 <body>
-Hello
+
+    <div class="gapple">
+        <div class="glogo">
+            <img src="klassy-logo.png" id="logo">
+        </div>
+        <div class="gnav">
+            <a class="gid" href="#home">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="gid" href="#about">About</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="gid" href="#menu">Menu</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="gid" href="#chef">Chefs</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="gid">Features</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="gid" href="#register">Contact Us</a> 
+        </div>
+        
+    </div>
+ 
+    
+
+
+
+
+
+
+    <div class="flexbox1" id="home">
+        <div class="slevel1">
+          
+          <div class="sinnertext">
+             <h1 style="font-family: cursive; color:white;"> Klassy Cafe</h1>
+             <h3 style="font-family: Times new roman; color: white;"> THE BEST EXPERIENCE </h3>
+             <a href="#"> Make A Reservation </a>
+          </div>
+          
+        </div>
+        <div class="spic">
+              <div class="slidepics fade">
+                 <img src="slide-01.jpeg" style="width:100%; height: 100%; object-fit:cover;">
+              </div>
+              
+              <div class="slidepics fade">
+                 <img src="slide-02.jpeg" style="width:100%; height: 100%; object-fit:cover;">
+              </div>
+              
+              <div class="slidepics fade">
+                 <img src="slide-03.jpeg" style="width:100%; height: 100%; object-fit:cover;">
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+          </div>
+          
+    </div>
+    
+    
+    <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slidepics");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  
+  slides[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+    <section id="about">
+        <div class="row1r">
+    <div class="col-56rr" style="padding-right: 30px">
+        <h2 style="color: tomato; padding-left: 60px; padding-top: 5px">About Us</h2>
+    <h1 style="font-weight: bold; font-size: 40px; padding-left: 60px; color: #242525">We Leave A Delicious Memory For You</h1>
+    <p style="padding-left: 60px">Klassy Cafe is one of the best restaurant HTML templates with Bootstrap v4.5.2 CSS framework. You can download and feel free to use this website template layout for your restaurant business. You are allowed to use this template for commercial purposes.</p>
+    <p style="padding-left: 60px">You are NOT allowed to redistribute the template ZIP file on any template donwnload website. Please contact us for more information.</p>
+    <div class="row1r" style="padding-left: 53px">
+    <div class="col-33rr"><img src="images\about-thumb-01.jpg" style="width: 100%; padding-right: 20px"></div>
+    <div class="col-33rr"><img src="images\about-thumb-02.jpg" style="width: 100%; padding-right: 20px"></div>
+    <div class="col-33rr"><img src="images\about-thumb-03.jpg" style="width: 100%; padding-right: 20px"></div>
+    </div>
+    </div>
+    <div class="col-44rr" style="padding-right: 45px; padding-top: 40px; padding-left: 30px"><img src="images\about-video-bg.jpg" width="100%"></div>
+    </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <div class="gone" id="menu">
+        <div class="gtwo">
+            <div class="hr"><hr id="ghr"></div>
+            <div class="gthree">
+                    OUR MENU
+            </div>
+        </div>
+
+        <div class="gfour">
+            <div class="gfive">
+                Our selection of cakes with quality taste
+            </div>
+        </div>
+
+    </div>
+
+    <div class="geleven">
+
+        <div class="gsix">
+            <div class="gseven" id="pic1">
+                <div class="geight">
+                    $14 
+                </div>
+                <div class="gnine">
+                    <div class="gtitle">
+                        Chocolate Cake
+                    </div>
+                    <div class="gdescription">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.
+                    </div>
+                    <div class="glink">
+                        Make Reservation
+                    </div>
+                </div>                
+            </div>
+
+            <div class="gseven" id="pic2">
+                <div class="geight">
+                    $22 
+                </div>
+                <div class="gnine">
+                    <div class="gtitle">
+                        Klassy Pancake
+                    </div>
+                    <div class="gdescription">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.
+                    </div>
+                    <div class="glink">
+                        Make Reservation
+                    </div>
+                </div>
+            </div>
+
+            <div class="gseven" id="pic3">
+                <div class="geight">
+                    $18
+                </div>
+                <div class="gnine">
+                    <div class="gtitle">
+                        Tall Klassy Bread
+                    </div>
+                    <div class="gdescription">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.
+                    </div>
+                    
+                    <div class="glink">
+                        Make Reservation
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+            <div class="gseven" id="pic4">
+                <div class="geight">
+                    $10 
+                </div>
+                <div class="gnine">
+                    <div class="gtitle">
+                        Blueberry Cheezecake
+                    </div>
+                    <div class="gdescription">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="gseven" id="pic5">
+                <div class="geight">
+                    $8.5
+                </div>
+                <div class="gnine">
+                    <div class="gtitle">
+                        Klassy Cup Cake
+                    </div>
+                    <div class="gdescription">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.
+                    </div>
+                    <div class="glink">
+                        Make Reservation
+                    </div>              
+                </div>
+            </div>
+
+            <div class="gseven" id="pic6">
+                <div class="geight">
+                    $7.25
+                </div>
+                <div class="gnine" id="pic-last">
+                    <div class="gtitle">
+                        Klassic Cake
+                    </div>
+                    <div class="gdescription">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.
+                    </div> 
+                    <div class="glink">
+                        Make Reservation
+                    </div>               
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="solution">
+        <div class="schef" id="chef"> 
+            
+            <p style="color:#e86767"> OUR CHEFS </p>
+            
+            <p style="font-family: arial black; font-size: 200%"> <b> We offer the best ingredients for you </b> </p>
+            
+            <div class="pics">
+            
+            <div class="sgallery">
+                
+                <img src="chefs-01.jpeg" alt="Randy Walker" width="300" height="300" class="picture">
+                <div class="smiddle">
+                    <div class="sicon">
+                        <div class="scolumn">
+                            <img src="facebook.jpeg" style="opacity: 1;">
+                        </div>
+                        
+                        <div class="scolumn">
+                            <img src="twitter.jpeg"  style="opacity: 1;">
+                        </div>
+                        
+                        <div class="scolumn">
+                            <img src="instagram-new.png"  style="opacity: 1;">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="sdescp">
+                    <p style="font-size: 150%"> <b> Randy Walker </b> </p> <p> Pastry Chef </p>
+                </div>  
+        
+            </div>
+            
+            
+            <div class="sgallery">
+                
+                <img src="chefs-02.jpeg" alt="David Martin" width="300" height="300" class="picture">
+                <div class="smiddle">
+                    <div class="sicon"> 
+                        <div class="scolumn">
+                            <img src="facebook.jpeg" style="opacity: 1;">
+                        </div>
+                        
+                        <div class="scolumn">
+                            <img src="twitter.jpeg"  style="opacity: 1;">
+                        </div>
+                        
+                        <div class="scolumn">
+                            <img src="instagram-new.png"  style="opacity: 1;">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="sdescp">
+                    <p style="font-size: 150%"> <b> David Martin </b> </p> <p> Cookie Chef </p>
+                </div>
+            
+            </div>
+            
+            <div class="sgallery">
+                
+                <img src="chefs-03.jpeg" alt="Peter Perkson" width="300" height="300" class="picture">
+                <div class="smiddle">
+                    <div class="sicon">
+                        <div class="scolumn">
+                            <img src="facebook.jpeg" style="opacity: 1;">
+                        </div>
+                        
+                        <div class="scolumn">
+                            <img src="twitter.jpeg"  style="opacity: 1;">
+                        </div>
+                        
+                        <div class="scolumn">
+                            <img src="instagram-new.png"  style="opacity: 1;">
+                        </div> 
+                    </div>
+                </div>
+    
+                <div class="sdescp">
+                    <p style="font-size: 150%"> <b> Peter Perkson </b> </p> <p> Pancake Chef </p>
+                </div>
+            
+            </div>
+            
+            
+        </div>
+            
+            
+            </div>
+            
+        </div>
+    </div>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sol" id="register">
+    <div class="a1r">
+		<div class="rowr " style="padding-bottom: 40px; padding-top: 50px; padding-left: auto; padding-right: auto;">
+			<div class="col-40r" style="padding-top: 30px; padding-right: 20px">
+				<p style="color: white; font-size: 25px">- Contact Us</p>
+				<p style="color: white; font-size: 30px">Here You Can Make A Reservation Or Just walking to our cafe</p>
+				<p style="color: white">Donec pretium est orci, non vulputate arcu hendrerit a. Fusce a eleifend riqsie, namei sollicitudin urna diam, sed commodo purus porta ut.</p><br><br>
+				<div class="rowr">
+					<div class="col-41r" style="padding-right: 40px; padding-top: 40px">
+						
+							<div class="a2r">
+								<div class="phoner"><i class="fa fa-phone fa-2x" ></i></div>
+								<h3 style="padding-top: 0px;" align="center">Phone Numbers</h3>
+								<div class="a3r"><p >080-090-0990</p></div>
+								<div class="a3r"><p >080-090-0880</p><br></div>
+				            </div>		
+						
+					</div>
+					<div class="col-41r" style="padding-right: 40px; padding-top: 40px">
+						
+							<div class="a2r" >
+								<div class="phoner"><i class="fa fa-envelope fa-2x" aria-hidden="true" ></i></div>
+								<h3 style="padding-top: 0px;" align="center">Emails</h3>
+								<div class="a3r">
+								<p >hello@company.com</p></div>
+								<div class="a3r">
+								<p >info@company.com</p><br>
+							</div>
+				            </div>		
+					
+					</div>
+				</div>
+			</div>
+			<div class="col-40r" style="padding-top: 50px; padding-right: 40px; padding-left: 20px">
+				<div class="containerr">
+					<p align="center" style="font-size: 25px; font-weight: 900"><b>TABLE RESERVATION</b></p>
+				<div class="rowr">
+					<div class="col-30r" style="width: 100%; padding: 20px; padding-right: 65px">
+                    <input type="text" name="name" placeholder="Your Name*" style="width: 100% ">   
+                </div>
+					<div class="col-30r" style="width: 100%; padding: 20px; padding-right: 65px">
+						<input type="text" name="email" placeholder="Enter your Email address" style="width: 100%">
+					</div>
+				</div>
+				<div class="rowr" >
+					<div class="col-30r" style="width: 100%; padding: 20px; padding-right: 65px" >
+						<input type="text" name="phone Numbers" placeholder="Phone Number*" style="width: 100%; ">
+					</div>
+					<div class="col-40r" style="width: 100%; padding: 20px">
+						 <select id="Number of Guest" name="Number of Guest" required="" style="width: 100%">
+                    <option value="" disabled selected>Number of Guest</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+					</div>					
+				</div>
+				<div class="rowr">
+					<div class="col-30r" style="width: 100%; padding: 20px; padding-right: 65px" >
+						<input type="text" name="Date" placeholder="dd/mm/yyyy" style="width: 100%; ">
+						
+					</div>
+					<div class="col-40r" style="width: 100%; padding: 20px;" >
+						<select name="Time" required="" style="width: 100%">
+					<option value="" disabled selected>Time</option>
+                    <option value="1">Breakfast</option>
+                    <option value="2">Lunch</option>
+                    <option value="3">Dinner</option>	
+						</select>
+					</div>
+				</div>
+				<div class="rowr" style="padding-right: 25px; padding-left: 35px; padding-top: 20px">
+					 <textarea name="message" rows="7" cols="30" style="width: 100%; border-color: #D4D4D4" placeholder="Message"></textarea>
+				</div>
+				<div class="rowr" style="padding-right: 25px; padding-left: 35px; padding-top: 20px">
+                <div class="submitR" style="text-align: center; padding-top: 10px; "> Make A Reservation
+
+                </div>
+                </div>
+				</div>				
+			</div>			
+		</div>
+		
+	</div>
+</div> 
+
+    
+
+
+
+
+
+
+
+
+
+
+<div class="resp">
+    <h3>KLASSY WEEK</h3>
+    <div>
+        <P class="specialmeal">This Week's Special Meal Offers</P>
+        <div id="list1">
+            <ul>
+                <li><a href="#tab1=" onclick="page(1)"><img src="breakfast.png"
+                            alt="Breakfast"><span>Breakfast</span></a>
+                </li>
+                <li><a href="#tab2" onclick="page(2)"><img src="lunch.png" alt="Lunch"><span>Lunch</span></a></li>
+                <li><a href="#tab3" onclick="page(3)"><img src="dinner.png" alt="Dinner"><span>Dinner</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function page(n) {
+
+            if (n == 2) {
+                document.getElementById("lunch").style.display = 'block';
+                document.getElementById("breakfast").style.display = 'none';
+                document.getElementById("dinner").style.display = 'none';
+            }
+            if (n == 3) {
+                document.getElementById("dinner").style.display = 'block';
+                document.getElementById("lunch").style.display = 'none';
+                document.getElementById("breakfast").style.display = 'none';
+            }
+            if (n == 1) {
+                document.getElementById("breakfast").style.display = 'block';
+                document.getElementById("lunch").style.display = 'none';
+                document.getElementById("dinner").style.display = 'none';
+            }
+
+        }
+    </script>
+    <div class="meal-container row">
+        <a id="tab1"></a>
+        <div id="breakfast">
+            <div class="mealoffer-col-1">
+                <div class="item col-4">
+                    <img src="freshchickensalad.png" alt="Fresh Chicken Salad" class="image">
+                    <div class="itemdescription">
+                        <h4>Fruit Chicken Salad</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, corporis dicta.</p>
+                    </div>
+                    <div class="price">
+                        <h6>$10.50</h6>
+                    </div>
+                </div>
+                <div class="item col-4">
+                    <img src="orangejuice.png" alt="Orange Juice" class="image">
+                    <div class="itemdescription">
+                        <h4>Orange Juice</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, corporis dicta.</p>
+                    </div>
+                    <div class="price">
+                        <h6>$8.50</h6>
+                    </div>
+                </div>
+                <div class="item col-4">
+                    <img src="omeletteandcheese.png" alt="Omelette and Cheese" class="image">
+                    <div class="itemdescription">
+                        <h4>Omelette and Cheese</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, corporis dicta.</p>
+                    </div>
+                    <div class="price">
+                        <h6>$4.10</h6>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="mealoffer-col-2">
+                <div class="item col-4">
+                    <img src="eggomelette.png" alt="Egg Omelette" class="image">
+                    <div class="itemdescription">
+                        <h4>Egg Omelette</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, corporis dicta.</p>
+                    </div>
+                    <div class="price align-price" >
+                        <h6>$6.50</h6>
+                    </div>
+                </div>
+                <div class="item col-4">
+                    <img src="dollmapire.png" alt="Dollma Pire" class="image">
+                    <div class="itemdescription">
+                        <h4>Dollma Pire</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, corporis dicta.</p>
+                    </div>
+                    <div class="price">
+                        <h6>$5.50</h6>
+                    </div>
+                </div>
+                <div class="item col-4">
+                    <img src="fruitsalad.png" alt="Fruit Salad" class="image">
+                    <div class="itemdescription">
+                        <h4>Fruit Salad</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, corporis dicta.</p>
+                    </div>
+                    <div class="price">
+                        <h6>$9.90</h6>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <a id="tab2"></a>
+        <div id="lunch">
+            <div class="mealoffer-col-1">
+                <div class="item col-4">
+                    <img src="orangejuice.png" alt="Orange Juice" class="image">
+                    <div class="itemdescription">
+                        <h4>Orange Juice</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, corporis dicta.</p>
+                    </div>
+                    <div class="price">
+                        <h6>$8.50</h6>
+                    </div>
+                </div>
+                <div class="item col-4">
+                    <img src="freshchickensalad.png" alt="Fresh Chicken Salad" class="image">
+                    <div class="itemdescription">
+                        <h4>Fruit Chicken Salad</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, corporis dicta.</p>
+                    </div>
+                    <div class="price">
+                        <h6>$10.50</h6>
+                    </div>
+                </div>
+
+                <div class="item col-4">
+                    <img src="dollmapire.png" alt="Dollma Pire" class="image">
+                    <div class="itemdescription">
+                        <h4>Dollma Pire</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, corporis dicta.</p>
+                    </div>
+                    <div class="price">
+                        <h6>$5.50</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="mealoffer-col-2">
+                <div class="item col-4">
+                    <img src="eggomelette.png" alt="Egg Omelette" class="image">
+                    <div class="itemdescription">
+                        <h4>Egg Omelette</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, corporis dicta.</p>
+                    </div>
+                    <div class="price">
+                        <h6>$6.50</h6>
+                    </div>
+                </div>
+                <div class="item col-4">
+                    <img src="fruitsalad.png" alt="Fruit Salad" class="image">
+                    <div class="itemdescription">
+                        <h4>Fruit Salad</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, corporis dicta.</p>
+                    </div>
+                    <div class="price">
+                        <h6>$9.90</h6>
+                    </div>
+                </div>
+                <div class="item col-4">
+                    <img src="omeletteandcheese.png" alt="Omelette and Cheese" class="image">
+                    <div class="itemdescription">
+                        <h4>Omelette and Cheese</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, corporis dicta.</p>
+                    </div>
+                    <div class="price">
+                        <h6>$4.10</h6>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <a id="tab3"></a>
+        <div id="dinner">
+            <div class="mealoffer-col-1">
+                <div class="item col-4">
+                    <img src="freshchickensalad.png" alt="Fresh Chicken Salad" class="image">
+                    <div class="itemdescription">
+                        <h4>Fruit Chicken Salad</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, corporis dicta.</p>
+                    </div>
+                    <div class="price">
+                        <h6>$10.50</h6>
+                    </div>
+                </div>
+                <div class="item col-4">
+                    <img src="orangejuice.png" alt="Orange Juice" class="image">
+                    <div class="itemdescription">
+                        <h4>Orange Juice</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, corporis dicta.</p>
+                    </div>
+                    <div class="price">
+                        <h6>$8.50</h6>
+                    </div>
+                </div>
+                <div class="item col-4">
+                    <img src="eggomelette.png" alt="Egg Omelette" class="image">
+                    <div class="itemdescription">
+                        <h4>Egg Omelette</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, corporis dicta.</p>
+                    </div>
+                    <div class="price">
+                        <h6>$6.50</h6>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mealoffer-col-2">
+                <div class="item col-4">
+                    <img src="dollmapire.png" alt="Dollma Pire" class="image">
+                    <div class="itemdescription">
+                        <h4>Dollma Pire</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, corporis dicta.</p>
+                    </div>
+                    <div class="price">
+                        <h6>$5.50</h6>
+                    </div>
+                </div>
+                <div class="item col-4">
+                    <img src="omeletteandcheese.png" alt="Omelette and Cheese" class="image">
+                    <div class="itemdescription">
+                        <h4>Omelette and Cheese</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, corporis dicta.</p>
+                    </div>
+                    <div class="price">
+                        <h6>$4.10</h6>
+                    </div>
+                </div>
+                <div class="item col-4">
+                    <img src="fruitsalad.png" alt="Fruit Salad" class="image">
+                    <div class="itemdescription">
+                        <h4>Fruit Salad</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, corporis dicta.</p>
+                    </div>
+                    <div class="price">
+                        <h6>$9.90</h6>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+    
+        
+
+
 </body>
 </html>
